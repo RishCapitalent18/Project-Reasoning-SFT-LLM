@@ -1,0 +1,16 @@
+### model
+model_name_or_path: /home/apoorvachavali/A-TML/LLaMA-Factory/saves/qwen25_3b_instruct/your_name1
+
+### method
+stage: eval
+do_train: false
+finetuning_type: full
+template: qwen
+
+### dataset
+dataset: lighteval:mmlu_redux_2, lighteval:math_500, lighteval:aime24, lighteval:aime25, lighteval:gpqa
+cutoff_len: 16384
+
+### output
+output_dir: ~/eval_results
+overwrite_output_dir: true
