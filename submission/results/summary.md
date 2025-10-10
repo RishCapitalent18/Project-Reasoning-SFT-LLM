@@ -1,0 +1,12 @@
+# Results Summary
+
+| Benchmark    | Metric             | Baseline | SFT-random | SFT-LIMOPro |
+|--------------|--------------------|----------|------------|-------------|
+| AIME24       | pass@k_with_k      | 0.1000   | 0.0333     | 0.0000      |
+| AIME25       | pass@k_with_k&n    | 0.0000   | 0.0333     | 0.1000      |
+| MATH-500     | pass@k_with_k&n    | 0.6340   | 0.5060     | 0.5600      |
+| GPQA-Diamond | gpqa_pass@k_with_k | 0.2929   | 0.3081     | 0.2727      |
+| LCB Codegen  | codegen_pass@1:16  | 0.0858   | 0.0485     | 0.0448      |
+| MMLU-Redux-2 | acc                | 0.6393   | 0.2356     | 0.4404      |
+
+Raw outputs: see `submission/results/raw/`.

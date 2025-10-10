@@ -1,0 +1,16 @@
+[2025-10-04 14:23:33,120] [[32m    INFO[0m]: --- DISPLAYING RESULTS --- (pipeline.py:432)[0m
+[2025-10-04 14:23:33,139] [[32m    INFO[0m]: --- SAVING AND PUSHING RESULTS --- (pipeline.py:422)[0m
+[2025-10-04 14:23:33,139] [[32m    INFO[0m]: Saving experiment tracker (evaluation_tracker.py:246)[0m
+[2025-10-04 14:23:46,880] [[32m    INFO[0m]: Saving results to /home/apoorvachavali/A-TML/LLaMA-Factory/outputs_baseline/results/Qwen/Qwen2.5-3B-Instruct/results_2025-10-04T14-23-33.139580.json (evaluation_tracker.py:310)[0m
+[2025-10-04 14:23:46,895] [[32m    INFO[0m]: Saving details to /home/apoorvachavali/A-TML/LLaMA-Factory/outputs_baseline/details/Qwen/Qwen2.5-3B-Instruct/2025-10-04T14-23-33.139580 (evaluation_tracker.py:354)[0m
+|            Task             |Version|      Metric      |Value |   |Stderr|
+|-----------------------------|-------|------------------|-----:|---|-----:|
+|all                          |       |pass@k_with_k     |0.1000|±  |0.0557|
+|                             |       |gpqa_pass@k_with_k|0.2929|±  |0.0324|
+|                             |       |pass@k_with_k&n   |0.3170|±  |0.0108|
+|                             |       |codegen_pass@1:16 |0.0858|±  |0.0171|
+|extended:lcb:codegeneration:0|       |codegen_pass@1:16 |0.0858|±  |0.0171|
+|lighteval:aime24:0           |       |pass@k_with_k     |0.1000|±  |0.0557|
+|lighteval:aime25:0           |       |pass@k_with_k&n   |0.0000|±  |0.0000|
+|lighteval:gpqa:diamond:0     |       |gpqa_pass@k_with_k|0.2929|±  |0.0324|
+|lighteval:math_500:0         |       |pass@k_with_k&n   |0.6340|±  |0.0216|

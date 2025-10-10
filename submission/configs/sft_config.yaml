@@ -1,0 +1,38 @@
+# sft_config.yaml
+### model
+model_name_or_path: Qwen/Qwen2.5-3B-Instruct
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+deepspeed: examples/deepspeed/ds_z3_offload_config.json
+flash_attn: fa2
+
+### dataset
+dataset: train_subset_15k  # ensure dataset_info.json has this entry
+cutoff_len: 16384
+overwrite_cache: true
+preprocessing_num_workers: 16
+template: qwen
+
+### output
+# change this if you want a different save location
+output_dir: saves/qwen25_3b_instruct/your_name1
+logging_steps: 1
+# save_strategy: epoch
+save_steps: 1000
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+learning_rate: 1.0e-6
+num_train_epochs: 2
+lr_scheduler_type: cosine
+warmup_ratio: 0.05
+bf16: true
+ddp_timeout: 180000000
+
+report_to: none

@@ -1,0 +1,18 @@
+### model
+# Update to your actual fine-tuned model checkpoint if different
+model_name_or_path: saves/qwen25_3b_instruct/your_name1
+
+### method
+stage: eval
+do_train: false
+finetuning_type: full
+template: qwen
+
+### dataset
+dataset: lighteval:mmlu_redux_2, lighteval:math_500, lighteval:aime24, lighteval:aime25, lighteval:gpqa
+cutoff_len: 16384
+
+### output
+# Run from repo root so outputs land in submission/results/raw
+output_dir: submission/results/raw
+overwrite_output_dir: true
