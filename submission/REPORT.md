@@ -74,6 +74,24 @@ Benchmarks and metrics:
 - LIMOPro SFT recovers a substantial portion of MMLU (0.4404 vs 0.2356 random), improves AIME25 and MATH-500 over random, but still trails baseline on MMLU and codegen.
 - These signals suggest catastrophic forgetting and domain shift induced by SFT on reasoning-heavy math data; selection strategies like LIMOPro help mitigate forgetting compared to random sampling.
 
+### Step 7: Advanced Data Selection (LIMOPro)
+
+This corresponds to README Step 7 (advanced data selection). We used a curated 15k subset via LIMOPro and observed the following changes versus the Random 15k SFT:
+- AIME24 (pass@k_with_k): 0.0333 → 0.0000 (−0.0333)
+- AIME25 (pass@k_with_k&n): 0.0333 → 0.1000 (+0.0667)
+- MATH-500 (pass@k_with_k&n): 0.5060 → 0.5600 (+0.0540)
+- GPQA-Diamond (gpqa_pass@k_with_k): 0.3081 → 0.2727 (−0.0354)
+- LiveCodeBench (codegen_pass@1:16): 0.0485 → 0.0448 (−0.0037)
+- MMLU-Redux-2 (acc): 0.2356 → 0.4404 (+0.2048)
+
+Summary: LIMOPro substantially recovers general knowledge (MMLU) and improves some reasoning tasks (e.g., AIME25, MATH-500) relative to random selection, with small trade-offs on GPQA/codegen and AIME24. Raw logs for Step 7 are included:
+- submission/results/raw/results7.out
+- submission/results/raw/eval_limopro_92004 (step 7).out
+
+See also:
+- Config: submission/configs/sft_limopro.yaml
+- Eval script: submission/scripts/eval_limopro.sh
+
 ### Compute & Environment
 - ARC (Miniconda3, CUDA 12.6)
 - Tooling: LLaMA-Factory + lighteval + vLLM worker
