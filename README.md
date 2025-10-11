@@ -493,5 +493,6 @@ Quick Links:
 - Results (table): submission/results/summary.md
 
 ### Hugging Face Links
-- Model : https://huggingface.co/apoorva2311/Limopro-model/tree/main
+- Limopro Model : https://huggingface.co/apoorva2311/Limopro-model/tree/main
+- SFT Model : https://huggingface.co/apoorva2311/TML-SFT-MODEL/tree/main
 - Dataset : https://huggingface.co/datasets/apoorva2311/TML-limopro/tree/main
