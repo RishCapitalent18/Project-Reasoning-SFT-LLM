@@ -18,7 +18,7 @@ template: qwen
 
 ### output
 # change this if you want a different save location
-output_dir: saves/qwen25_3b_instruct/your_name1
+output_dir: saves/qwen25_3b_instruct/
 logging_steps: 1
 # save_strategy: epoch
 save_steps: 1000

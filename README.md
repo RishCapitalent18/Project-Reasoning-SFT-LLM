@@ -469,3 +469,29 @@ The TOP 5 teams will get a bonus of 10 points!
 
 
 Good luck!
+
+---
+
+## Submission Package Overview
+
+This repository includes a submission package under submission/ for the assignment.
+
+Contents:
+- HOWTO.md: Reproducibility instructions
+- results/
+  - summary.md: Comparison table (Baseline vs SFT-random vs SFT-LIMOPro)
+  - summary.csv: Same table in CSV
+  - raw/: Raw evaluation outputs captured from SLURM runs
+- configs/: The training and eval YAMLs used
+- scripts/: Normalized SLURM scripts for baseline and fine-tuned evaluations
+- data/: Dataset info patch and notes
+- HUGGINGFACE.md: Model and dataset publication instructions
+- SUBMISSION_CHECKLIST.md: Coverage of requirements
+
+Quick Links:
+- How To: submission/HOWTO.md
+- Results (table): submission/results/summary.md
+
+### Hugging Face Links
+- Model : https://huggingface.co/apoorva2311/Limopro-model/tree/main
+- Dataset : https://huggingface.co/datasets/apoorva2311/TML-limopro/tree/main
