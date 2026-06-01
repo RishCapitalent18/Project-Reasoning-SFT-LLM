@@ -2,7 +2,7 @@
 SFT Training LLM for Improved Reasoning
 
 ## 👤 My Contributions
-This is a collaborative group project. My contributions: Ran fine-tuning experiments on Qwen2.5-3B using the shared SFT pipeline, compared outputs across multiple runs, and identified best-performing configurations based on AIME and GPQA Diamond benchmark results.
+This is a group project. My contributions include Running fine-tuning experiments on Qwen2.5-3B using the shared SFT pipeline, compared outputs across multiple runs, and identified best-performing configurations based on AIME and GPQA Diamond benchmark results.
 
 ---
 
